@@ -55,11 +55,11 @@ body{
 
 .container-guia{
     display: flex;
+    flex-wrap: wrap;
+    padding: 5rem 0;
     justify-content: space-between;
-    padding: 2rem 0;
     position: relative;
-    
-    
+   
     
     
 }
