@@ -20,6 +20,7 @@ header{
 
 body{
     background-color: #001d3d;
+    margin: 25px;
   
 
 }
@@ -47,14 +48,20 @@ body{
     list-style: none;
     /*Cria um espaçamento entre as tag LI*/
     margin-bottom: 10px;
+
+    
    
 }
 
 .container-guia{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 2rem 0;
-    grid-gap: 25px;
+    position: relative;
+    
+    
+    
+    
 }
 
 .tipos{
@@ -78,13 +85,18 @@ body{
     height: 120px;
     line-height: 50px;
     border-radius: 50%;
-    background-color:#3b0073;
+
+    background-color:#2cc762;
     color: #fff;
     text-align: center;
     line-height: 120px;
-    /*para a class ficar no meio*/
     margin: 0 auto;
+    position: relative;
+
+  
 }
+
+
 .container-guiando{
     color: #fff;
     text-align:center;
@@ -133,21 +145,44 @@ footer .rede{
 
 /*responsividasde*/
 
-@media screen and (min-width:320px) {
+@media screen and (max-width:768px) {
+
+    body{
+        margin: 25px;
+    }
     .container-guia .tipos{
         width:60%;
         position: relative;
-        left: 80px;
-    
+        display: flex;
+        text-align: center;
+        padding: 1rem ;
+        justify-content: center;
+
         
         
+    }
+    .tipos{
+        position: relative;
+        left: 52px;
     }
     .container-guia{
         display: grid;
         position: relative;
         padding: 2rem 0;
-        grid-gap: 25px;
+        grid-gap: 20px;
+        
+
        
+    }
+    .container-conteudo-one .tipos{
+        flex: 1;
+        justify-content: center;
+        text-align: center;
+    }
+    .container-guia .tipos {
+        position: relative;
+        justify-content: center;
+      
     }
         
     .container-guia .linguagens{
@@ -155,14 +190,15 @@ footer .rede{
         height: 120px;
         line-height: 50px;
         border-radius: 50%;
-        background-color:#3b0073;
-        color: #fff;;
+        background-color:#2cc762;
+        color: #fff;
         text-align: center;
         line-height: 120px;
-        /*para a class ficar no meio*/
         margin: 0 auto;
         position: relative;
-        right: 7px;
+    }
+    footer{
+        
     }
     
 }
